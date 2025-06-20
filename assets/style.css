@@ -189,20 +189,25 @@ nav#nav {
 }
 
 /* Buttons */
-.btn {
-  background: #375a7f; /* Muted dark blue */
+
+.btn-small {
+  background: #375a7f;
   color: #d9e3f0;
-  padding: 12px 26px;
-  border-radius: 8px;
-  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease, transform 0.2s;
   display: inline-block;
-  margin-top: 24px;
-  cursor: pointer;
-  user-select: none;
   border: 2px solid transparent;
 }
+
+.btn-small:hover {
+  background: #4f7ea4;
+  transform: translateY(-2px);
+}
+
 
 .btn:hover,
 .btn:focus {
@@ -210,6 +215,7 @@ nav#nav {
   outline: none;
   transform: translateY(-3px);
 }
+
 
 /* Container */
 .container {
@@ -504,4 +510,88 @@ footer {
   margin-bottom: 8px;
   font-size: 0.95rem;
   color: #aab7c4;
+}
+
+.hero-content .btn + .btn {
+  margin-left: 12px;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #89a7b0;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 16px;
+  transition: color 0.3s;
+}
+
+.cv-download:hover {
+  color: #a3bac9;
+  /* text-decoration: underline; */
+}
+
+.project-link {
+  position: relative;
+  text-decoration: none;
+  color: #89a7b0;
+  font-weight: 600;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.project-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a3bac9;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.project-link:hover {
+  color: #a3bac9;
+}
+
+.project-link:hover::after {
+  width: 100%;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a3bac9;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #89a7b0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.cv-link span {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.cv-link:hover {
+  color: #a3bac9;
+}
+
+.cv-link:hover span {
+  transform: translateX(5px);
 }
