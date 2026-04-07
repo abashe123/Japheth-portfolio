@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Japheth Abashe - Full Stack Developer & Designer</title>
-  <meta name="description" content="Passionate full stack developer and designer with 4+ years of experience building scalable web applications and creating stunning digital experiences." />
-  <link rel="stylesheet" href="assets/style-quantum.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japheth Abashe - Web Developer</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style-minimal-new.css">
 </head>
 <body>
-
-  <!-- Animated Background -->
-  <div class="animated-bg">
-    <div class="floating-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-  </div>
-
-  <!-- Navigation Header -->
-  <header class="header">
-    <nav class="nav-container">
-      <div class="nav-brand">
-        <span class="brand-text">Japheth Abashe</span>
-      </div>
-
-      <ul class="nav-menu" id="nav-menu">
-        <li class="nav-item">
-          <a href="#home" class="nav-link active" data-section="home">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-          </a>
+    <!-- Creative Navbar -->
+    <nav class="navbar" data-aos="fade-down">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JA</span>
+                <div class="logo-dot"></div>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">
+                    <span class="nav-text">Home</span>
+                    <span class="nav-dot"></span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="nav-text">About</span>
+                    <span class="nav-dot"></span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <span class="nav-text">Experience</span>
+                    <span class="nav-dot"></span>
+                </a>
+                <a href="#work" class="nav-link">
+                    <span class="nav-text">Work</span>
+                    <span class="nav-dot"></span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="nav-text">Contact</span>
+                    <span class="nav-dot"></span>
+                </a>
+            </div>
+            <div class="nav-cta">
+                <a href="#contact" class="nav-btn">Let's Talk</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-quantum">
+    <section id="home" class="hero">
         <div class="hero-background">
-            <div class="quantum-field">
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-                <div class="quantum-particle"></div>
-            </div>
-            <div class="energy-waves"></div>
+            <div class="hero-orb"></div>
+            <div class="hero-orb"></div>
+            <div class="hero-orb"></div>
         </div>
-        
-        <div class="hero-content">
-            <div class="hero-text" data-aos="fade-up">
-                <h1 class="hero-title">
-                    <span class="title-line">Digital Architect</span>
-                    <span class="title-line">Creative Engineer</span>
-                </h1>
-                <p class="hero-subtitle">Crafting digital experiences that transcend boundaries</p>
-                
-                <div class="hero-cta">
-                    <a href="#projects" class="cta-primary">
-                        <span class="cta-text">Explore Universe</span>
-                        <span class="cta-arrow">></span>
-                    </a>
-                    <a href="#contact" class="cta-secondary">
-                        <span class="cta-text">Connect</span>
-                        <span class="cta-pulse"></span>
-                    </a>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left" data-aos="fade-right">
+                    <h1 class="hero-title">
+                        <span class="intro-text">Hi, my name is</span><br>
+                        <span class="name-text">Japheth Abashe.</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        I build things for the web.
+                    </p>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                        I'm a Web Developer specializing in building (and occasionally designing) 
+                        exceptional digital experiences. Currently, I'm focused on building 
+                        accessible & human-centred products.
+                    </p>
+                    
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#work" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="hero-visual" data-aos="fade-left">
-                <div class="hologram-frame">
-                    <img src="assets/images/Japheth.png" alt="Japheth Abashe" class="hologram-photo">
-                    <div class="hologram-effect"></div>
-                    <div class="scan-line"></div>
-                </div>
-                
-                <div class="code-stream">
-                    <div class="stream-line"></div>
-                    <div class="stream-content">
-                        <span class="code-char">{</span>
-                        <span class="code-char">c</span>
-                        <span class="code-char">r</span>
-                        <span class="code-char">e</span>
-                        <span class="code-char">a</span>
-                        <span class="code-char">t</span>
-                        <span class="code-char">e</span>
-                        <span class="code-char">}</span>
+                <div class="hero-right" data-aos="fade-left">
+                    <div class="hero-visual">
+                        <div class="code-block">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable">developer</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-string">"Japheth"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable">passion</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-string">"Web Development"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable">create</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-function">()</span>
+                                <span class="code-operator">=></span>
+                                <span class="code-bracket">{</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-tab"></span>
+                                <span class="code-keyword">return</span>
+                                <span class="code-string">"Amazing Experiences"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-bracket">}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,194 +120,155 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-cosmos">
-        <div class="cosmos-background">
-            <div class="star-field">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-            </div>
-            <div class="nebula"></div>
-        </div>
-        
-        <div class="about-content">
-            <div class="about-narrative" data-aos="fade-right">
-                <h2 class="about-title">
-                    <span class="title-word">Digital</span>
-                    <span class="title-word">Pioneer</span>
-                </h2>
-                <div class="about-story">
-                    <p class="story-line">I architect digital universes where innovation meets precision.</p>
-                    <p class="story-line">Every line of code is a brushstroke in the canvas of technology.</p>
-                    <p class="story-line">Transforming complex challenges into elegant solutions.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        I'm a passionate web developer who loves creating elegant solutions 
+                        to complex problems. My journey in tech has been driven by curiosity 
+                        and a desire to build things that make a difference.
+                    </p>
+                    <p class="about-description">
+                        I specialize in modern web technologies and enjoy working on projects 
+                        that challenge me to learn and grow. Every line of code is an opportunity 
+                        to create something meaningful.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedication</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="quantum-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="50">0</span>
-                        <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="5">0</span>
-                        <span class="stat-label">Years</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="100">0</span>
-                        <span class="stat-label">Skills</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="about-visual" data-aos="fade-left">
-                <div class="dna-helix">
-                    <div class="helix-strand"></div>
-                    <div class="helix-strand"></div>
-                    <div class="helix-node">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="helix-node">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <div class="helix-node">
-                        <i class="fas fa-rocket"></i>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="about-photo">
+                        <img src="assets/images/Japheth.png" alt="Japheth Abashe">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-matrix">
-        <div class="matrix-rain">
-            <div class="matrix-char">0</div>
-            <div class="matrix-char">1</div>
-            <div class="matrix-char">0</div>
-            <div class="matrix-char">1</div>
-            <div class="matrix-char">1</div>
-            <div class="matrix-char">0</div>
-        </div>
-        
-        <div class="skills-content">
-            <h2 class="skills-title" data-aos="fade-up">
-                <span class="title-char">S</span>
-                <span class="title-char">K</span>
-                <span class="title-char">I</span>
-                <span class="title-char">L</span>
-                <span class="title-char">L</span>
-                <span class="title-char">S</span>
-            </h2>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
             
-            <div class="skills-grid" data-aos="fade-up">
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-angular"></i>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Senior Web Developer</h3>
+                        <p class="timeline-company">Tech Company</p>
+                        <p class="timeline-date">2022 - Present</p>
+                        <p class="timeline-description">
+                            Lead development of scalable web applications using modern frameworks 
+                            and best practices. Mentored junior developers and improved team workflows.
+                        </p>
                     </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">Angular</span>
                 </div>
                 
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-react"></i>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <p class="timeline-company">Digital Agency</p>
+                        <p class="timeline-date">2020 - 2022</p>
+                        <p class="timeline-description">
+                            Developed and maintained multiple client projects using React, Node.js, 
+                            and various database technologies. Focused on performance optimization.
+                        </p>
                     </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">React</span>
                 </div>
                 
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-node"></i>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <p class="timeline-company">Startup Inc</p>
+                        <p class="timeline-date">2019 - 2020</p>
+                        <p class="timeline-description">
+                            Started my professional journey building responsive websites and learning 
+                            modern development practices. Contributed to various client projects.
+                        </p>
                     </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">Node.js</span>
-                </div>
-                
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-laravel"></i>
-                    </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">Laravel</span>
-                </div>
-                
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">HTML5</span>
-                </div>
-                
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">CSS3</span>
-                </div>
-                
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                
-                <div class="skill-orb">
-                    <div class="orb-core">
-                        <i class="fab fa-php"></i>
-                    </div>
-                    <div class="orb-ring"></div>
-                    <span class="skill-name">PHP</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-nexus">
-        <div class="nexus-background">
-            <div class="energy-grid"></div>
-            <div class="portal-effect"></div>
-        </div>
-        
-        <div class="projects-content">
-            <h2 class="projects-title" data-aos="fade-up">Project Nexus</h2>
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Work</h2>
             
-            <div class="projects-timeline" data-aos="fade-up">
-                <div class="timeline-node">
-                    <div class="node-core">
-                        <i class="fas fa-mobile-alt"></i>
+            <div class="work-grid">
+                <div class="work-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
                     </div>
-                    <div class="node-content">
-                        <h3>Mobile Innovation</h3>
-                        <p>Revolutionary mobile applications</p>
-                        <a href="#" class="node-link">Explore <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="timeline-node">
-                    <div class="node-core">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="node-content">
-                        <h3>Web Platforms</h3>
-                        <p>Scalable web ecosystems</p>
-                        <a href="#" class="node-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    <div class="work-content">
+                        <h3 class="work-title">Mobile App</h3>
+                        <p class="work-description">
+                            Revolutionary mobile application with modern UI/UX design and seamless user experience.
+                        </p>
+                        <div class="work-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 
-                <div class="timeline-node">
-                    <div class="node-core">
-                        <i class="fas fa-brain"></i>
+                <div class="work-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
                     </div>
-                    <div class="node-content">
-                        <h3>AI Solutions</h3>
-                        <p>Intelligent automation systems</p>
-                        <a href="#" class="node-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    <div class="work-content">
+                        <h3 class="work-title">Web Platform</h3>
+                        <p class="work-description">
+                            Scalable web application with real-time features and modern architecture.
+                        </p>
+                        <div class="work-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="work-image">
+                        <div class="work-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">AI Solution</h3>
+                        <p class="work-description">
+                            Machine learning powered application for intelligent data analysis and insights.
+                        </p>
+                        <div class="work-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -294,20 +276,18 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-quantum">
-        <div class="quantum-field-contact">
-            <div class="quantum-wave"></div>
-            <div class="quantum-wave"></div>
-            <div class="quantum-wave"></div>
-        </div>
-        
-        <div class="contact-content">
-            <h2 class="contact-title" data-aos="fade-up">Connect Dimensions</h2>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact</h2>
             
-            <div class="contact-portal" data-aos="fade-up">
-                <div class="portal-ring"></div>
-                <div class="portal-content">
-                    <div class="contact-info">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <p class="contact-description">
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <span>japheth@example.com</span>
@@ -318,48 +298,34 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Digital Universe</span>
+                            <span>Worldwide</span>
                         </div>
                     </div>
-                    
-                    <div class="social-nexus">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
                 </div>
-              </a>
+                
+                <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-text">
-          <p>&copy; 2025 Japheth Abashe. All rights reserved.</p>
-          <p>Built with passion and lots of coffee</p>
+        <div class="container">
+            <p>&copy; 2024 Japheth Abashe. Made with <span class="heart">?</span> and code.</p>
         </div>
-        <div class="footer-social">
-          <a href="https://github.com/abashe123" target="_blank" class="social-link">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/japheth-abashe-0a5b1b232" target="_blank" class="social-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:abashejaph@gmail.com" class="social-link">
-            <i class="fas fa-envelope"></i>
           </a>
         </div>
       </div>
