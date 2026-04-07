@@ -3,288 +3,528 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Japheth Abashe Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <title>Japheth Abashe - Full Stack Developer & Designer</title>
+  <meta name="description" content="Passionate full stack developer and designer with 4+ years of experience building scalable web applications and creating stunning digital experiences." />
+  <link rel="stylesheet" href="assets/style-impactful.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Header with Nav -->
-  <header>
-    <div class="header-container">
-      <div class="branding">
-        <img src="assets/images/picture2.png" alt="Logo" class="logo" />
-      </div>
-
-      <div class="header-center">
-        <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-
-        <nav id="nav" aria-label="Primary navigation">
-          <ul id="nav-list">
-            <li><a href="#home" tabindex="0">Home</a></li>
-            <li><a href="#about" tabindex="0">About</a></li>
-            <li><a href="#exprience" tabindex="0">Experience</a></li>
-            <li><a href="#projects" tabindex="0">Projects</a></li>
-            <li><a href="#contact" tabindex="0">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
     </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-text">Japheth Abashe</span>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active" data-section="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" data-section="about">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link" data-section="projects">
+            <i class="fas fa-project-diagram"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <!-- <img src="assets/images/Japheth.png" alt="Japheth Abashe" class="profile-pic"> -->
-    <h2 id="typewriter"></h2>
-    <p>Explore my projects and skills in building clean, scalable, and user-friendly web applications.</p>
-    <a href="#projects" class="btn-small">View Projects</a>
-    <p>
-    <a href="assets/Japheth_CV.pdf" download class="cv-link">📄 Download CV <span>→</span></a>
-    </p>
-  </div>
-</section>
-
-
-  <!-- About Section -->
-  <section id="about" data-aos="fade-up" class="container" aria-labelledby="about-heading">
-    <h2 id="about-heading">About Me</h2>
-    <p>
-      Hey, I'm Japheth Abashe, a passionate web developer with over 4 years of experience building clean, scalable, and user-friendly web applications. I help businesses improve operations, manage data efficiently, and connect with their users through reliable digital solutions.
-    </p>
-    <p>
-      In addition to web development, I design social media graphics, posters, and marketing materials to help brands communicate their message effectively online.
-    </p>
-    <p>
-      I’m committed to delivering quality work, meeting deadlines, and collaborating closely with clients to build solutions that truly meet their needs.
-    </p>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" data-aos="fade-right" class="container" aria-labelledby="experience-heading">
-    <h2 id="experience-heading">Experience</h2>
-
-    <article class="experience-item" tabindex="0">
-      <h3>Graphic Designer & Social Media Coordinator</h3>
-      <p class="experience-meta">Anada Education — Mar 2025 – Present</p>
-      <p>Design marketing visuals, social media graphics, and brand materials to support student recruitment campaigns and improve online brand presence. Contribute to website updates and frontend enhancements for the agency’s internal platforms.</p>
-    </article>
-
-    <article class="experience-item" tabindex="0">
-      <h3>Software Developer</h3>
-      <p class="experience-meta">Softmed Ltd — Jul 2023 – Dec 2024</p>
-      <p>Developed and maintained healthcare management web applications using Laravel and Angular. Implemented patient data management, sample tracking, issue reporting, and result dissemination modules. Collaborated with ICT and Laboratory teams to improve system performance and service delivery.</p>
-    </article>
-
-    <article class="experience-item" tabindex="0">
-      <h3>Junior Web Developer</h3>
-      <p class="experience-meta">Uza Mifugo — Jun 2022 – Jun 2023</p>
-      <p>Contributed to the development of Uza Mifugo, a livestock marketplace web application. Assisted in backend API development and frontend enhancements, and supported marketing teams by designing promotional visuals and analyzing campaign data through Google Ads and Facebook Ads Manager.</p>
-    </article>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" data-aos="fade-left" class="container" aria-labelledby="skills-heading">
-    <h2 id="skills-heading">Skills</h2>
-    <ul class="skills-list">
-      <li class="skill-item" tabindex="0">Laravel</li>
-      <li class="skill-item" tabindex="0">Angular</li>
-      <li class="skill-item" tabindex="0">TypeScript</li>
-      <li class="skill-item" tabindex="0">Bootstrap</li>
-      <li class="skill-item" tabindex="0">Tailwind CSS</li>
-      <li class="skill-item" tabindex="0">Flutter</li>
-      <li class="skill-item" tabindex="0">Git & Version Control</li>
-      <li class="skill-item" tabindex="0">RESTful APIs</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-<section id="projects" data-aos="zoom-in">
-  <div class="container">
-    <h2>My Projects</h2>
-
-    <div class="projects-grid">
-
-      <!-- Medical Test Automation System -->
-      <div class="project-card">
-        <div class="project-image">
-          <span class="project-icon">💻</span>
-        </div>
-        <h3>Medical Test Automation System</h3>
-        <p>Web-based system for managing laboratory orders and test result dissemination, improved processing accuracy by 30%.</p>
-        <div class="tech-tags">
-          <span>Laravel</span>
-          <span>Angular</span>
-          <span>MySQL</span>
-        </div>
-        <p>
-          <a href=" https://github.com/abashe123/my-fullstack-project.git" target="_blank" class="project-link">📝 View Code</a>
-        </p>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
       </div>
-
-      <!-- Church ERP System -->
-      <div class="project-card">
-        <div class="project-image">
-          <span class="project-icon">⛪</span>
+      
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-intro">
+            <div class="hero-badge">
+              <i class="fas fa-code"></i>
+              <span>Full Stack Developer</span>
+            </div>
+            
+            <h1 class="hero-title">
+              <span class="greeting">Hi, I'm</span>
+              <span class="name">Japheth Abashe</span>
+              <span class="role">Full Stack Developer | Angular & Laravel Specialist</span>
+            </h1>
+            
+            <p class="hero-description">
+              I build scalable web and mobile applications that solve real-world problems.
+            </p>
+            
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-rocket"></i>
+                View My Projects
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fas fa-envelope"></i>
+                Contact Me
+              </a>
+            </div>
+          </div>
         </div>
-        <h3>Church ERP System</h3>
-        <p>Currently developing a web-based Church ERP system to manage memberships, attendance records and service schedules. The platform aims to streamline operations and improve administrative efficiency.</p>
-        <div class="tech-tags">
-          <span>Laravel</span>
+        
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <i class="fas fa-user photo-icon"></i>
+              <div class="photo-text">Your Photo Here</div>
+            </div>
+          </div>
+          
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="control control-red"></span>
+                <span class="control control-yellow"></span>
+                <span class="control control-green"></span>
+              </div>
+              <span class="window-title">developer.js</span>
+            </div>
+            <div class="code-content">
+              <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">'Japheth Abashe'</span>,
+  <span class="property">skills</span>: [<span class="string">'Angular'</span>, <span class="string">'Laravel'</span>],
+  <span class="property">passion</span>: <span class="string">'Building amazing apps'</span>,
+  <span class="function">create</span>() {
+    <span class="keyword">return</span> <span class="string">'Innovation + Quality'</span>;
+  }
+};</code></pre>
+            </div>
+          </div>
         </div>
-        <p>
-          <a href="https://github.com/ifeoluwa-frank/FirstLove-ERP.git" target="_blank" class="project-link">📝 View Code</a>
-        </p>
       </div>
+    </section>
 
-      <!-- Uza Mifugo -->
-      <div class="project-card">
-        <div class="project-image">
-          <span class="project-icon">🐄</span>
+    <!-- Creative Stacked Sections -->
+    <div class="content-grid">
+      <!-- About Section -->
+      <section class="creative-section" data-aos="fade-up">
+        <div class="about-creative">
+          <div class="about-creative-header" data-aos="fade-down">
+            <h2 class="about-creative-title">About Me</h2>
+            <p class="about-creative-subtitle">Passionate Full Stack Developer & Engineer</p>
+          </div>
+          
+          <div class="about-creative-content">
+            <div class="hero-intro" data-aos="fade-up">
+              <p class="hero-text">
+                I am a passionate <span class="highlight">Full Stack Developer</span> with a background in 
+                <span class="highlight">Computer Science and Engineering</span>. I specialize in building 
+                modern web and mobile applications using <span class="highlight">Angular and Laravel</span>. 
+                I enjoy solving problems, building efficient systems, and continuously improving my technical skills.
+              </p>
+            </div>
+            
+            <div class="particle-field">
+              <div class="particle-item"></div>
+              <div class="particle-item"></div>
+              <div class="particle-item"></div>
+              <div class="particle-item"></div>
+              <div class="particle-item"></div>
+            </div>
+            
+            <div class="immersive-message" data-aos="fade-up">
+              <p>
+                I transform <span class="highlight">ideas into reality</span> through innovative design and cutting-edge technology. 
+                Every project is an opportunity to <span class="highlight">push boundaries</span> and create something remarkable 
+                that makes a real difference in the digital world.
+              </p>
+            </div>
+          </div>
         </div>
-        <h3>Uza Mifugo</h3>
-        <p>Contributed to the development of Uza Mifugo, a livestock marketplace web application. Assisted with backend API development, frontend enhancements, and promotional visuals for social media marketing.</p>
-        <div class="tech-tags">
-          <span>Flutter</span>
-          <span>Dart</span>
+      </section>
 
+      <!-- Skills Universe Section -->
+      <section class="creative-section" data-aos="fade-up" data-aos-delay="100">
+        <div class="skills-universe-section">
+          <div class="skills-universe-header" data-aos="fade-down">
+            <h2 class="skills-universe-title">Skills Universe</h2>
+            <p class="skills-universe-subtitle">Explore my technical expertise through an interactive cosmic journey</p>
+          </div>
+          
+          <div class="skills-universe-main" data-aos="fade-up">
+            <div class="skills-galaxy-main">
+              <i class="fas fa-code skills-galaxy-icon-main"></i>
+            </div>
+            
+            <div class="skills-orbit-main">
+              <div class="skill-planet-main">
+                <i class="fab fa-angular skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">Angular</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-react skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">React</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-node skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">Node.js</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-laravel skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">Laravel</div>
+              </div>
+            </div>
+            
+            <div class="skills-orbit-main">
+              <div class="skill-planet-main">
+                <i class="fab fa-html5 skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">HTML5</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-css3-alt skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">CSS3</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-js skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">JavaScript</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-php skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">PHP</div>
+              </div>
+            </div>
+            
+            <div class="skills-orbit-main">
+              <div class="skill-planet-main">
+                <i class="fas fa-database skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">MySQL</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-git-alt skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">Git</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-figma skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">Figma</div>
+              </div>
+              <div class="skill-planet-main">
+                <i class="fab fa-docker skill-planet-icon-main"></i>
+                <div class="skill-planet-name-main">Docker</div>
+              </div>
+            </div>
+            
+            <div class="skills-floating-list">
+              <span class="floating-skill">TypeScript</span>
+              <span class="floating-skill">MongoDB</span>
+              <span class="floating-skill">Python</span>
+              <span class="floating-skill">Vue.js</span>
+              <span class="floating-skill">GraphQL</span>
+              <span class="floating-skill">AWS</span>
+              <span class="floating-skill">Redis</span>
+              <span class="floating-skill">Webpack</span>
+            </div>
+          </div>
+          
+          <div class="skills-particle-field">
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+            <div class="skills-particle"></div>
+          </div>
         </div>
-        <p>
-          <a href=" https://github.com/carmel26/uzamifugoApp.git" target="_blank" class="project-link">📝 View Code</a>
-        </p>
-      </div>
+      </section>
+    </div>   <!-- Projects Section -->
+      <section id="projects" class="projects-section" data-aos="fade-up" data-aos-delay="200">
+        <div class="projects-showcase">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Recent work I'm proud of</p>
+          </div>
+          <div class="project-timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-node" style="top: 20%;"></div>
+            <div class="timeline-node" style="top: 70%;"></div>
+            
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <div class="project-orb">
+                  <div class="project-orb-icon">
+                    <i class="fas fa-hospital"></i>
+                  </div>
+                  <div class="project-orb-tech">Healthcare</div>
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <h3>Healthcare Management System</h3>
+                  </div>
+                  <p class="project-description">
+                    Comprehensive healthcare platform for patient management, sample tracking, and result dissemination.
+                  </p>
+                  <div class="project-tech-stack">
+                    <span class="tech-chip">Laravel</span>
+                    <span class="tech-chip">Angular</span>
+                    <span class="tech-chip">MySQL</span>
+                  </div>
+                  <div class="project-stats-row">
+                    <div class="project-stat">
+                      <i class="fas fa-users"></i>
+                      <span>10k+ Users</span>
+                    </div>
+                    <div class="project-stat">
+                      <i class="fas fa-star"></i>
+                      <span>4.8 Rating</span>
+                    </div>
+                  </div>
+                  <div class="project-actions-row">
+                    <a href="https://github.com/abashe123/my-fullstack-project.git" target="_blank" class="project-btn">
+                      <i class="fab fa-github"></i>
+                      View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="project-item">
+              <div class="project-content-wrapper">
+                <div class="project-orb">
+                  <div class="project-orb-icon">
+                    <i class="fas fa-cow"></i>
+                  </div>
+                  <div class="project-orb-tech">Marketplace</div>
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <h3>Uza Mifugo - Livestock Marketplace</h3>
+                  </div>
+                  <p class="project-description">
+                    Mobile-first marketplace connecting livestock buyers and sellers with real-time bidding.
+                  </p>
+                  <div class="project-tech-stack">
+                    <span class="tech-chip">Flutter</span>
+                    <span class="tech-chip">Laravel</span>
+                    <span class="tech-chip">MySQL</span>
+                  </div>
+                  <div class="project-stats-row">
+                    <div class="project-stat">
+                      <i class="fas fa-users"></i>
+                      <span>5k+ Users</span>
+                    </div>
+                    <div class="project-stat">
+                      <i class="fas fa-star"></i>
+                      <span>4.6 Rating</span>
+                    </div>
+                  </div>
+                  <div class="project-actions-row">
+                    <a href="https://github.com/carmel26/uzamifugoApp.git" target="_blank" class="project-btn">
+                      <i class="fab fa-github"></i>
+                      View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- IoT Road Condition Assessment -->
-      <div class="project-card">
-        <div class="project-image">
-          <span class="project-icon">🛣️</span>
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-content">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+          </div>
+          <div class="contact-card">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always interested in hearing about new projects and opportunities. 
+              Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+            <div class="contact-methods">
+              <a href="mailto:abashejaph@gmail.com" class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Email</span>
+                  <span class="method-value">abashejaph@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/japheth-abashe-0a5b1b232" target="_blank" class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">LinkedIn</span>
+                  <span class="method-value">japheth-abashe</span>
+                </div>
+              </a>
+              <a href="https://github.com/abashe123" target="_blank" class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">GitHub</span>
+                  <span class="method-value">@abashe123</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <h3>IoT Road Condition Assessment</h3>
-        <p>Developed an IoT-based system for real-time road surface condition monitoring using sensors and machine learning. Published a research paper on this project in an IEEE conference.</p>
-        <div class="tech-tags">
-          <span>Flask</span>
-          <span>Raspberry Pi</span>
-          <span>Machine Learning</span>
-        </div>
-        <p>
-          <a href=" https://github.com/ochielmike/pothole_identification.git" target="_blank" class="project-link">📝 View Code</a>
-        </p>
-        <p>
-          <a href="https://doi.org/your-paper-link" target="_blank" class="project-link">📖 View Paper</a>
-        </p>
-      </div>
-
+      </section>
     </div>
-  </div>
-</section>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Japheth Abashe. All rights reserved.</p>
+          <p>Built with passion and lots of coffee</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/abashe123" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/japheth-abashe-0a5b1b232" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:abashejaph@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
-  <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up" class="container" aria-labelledby="contact-heading">
-    <h2 id="contact-heading">Contact</h2>
-    <p>Feel free to reach out to me through the following platforms:</p>
-    <ul>
-      <li>Email: <a href="mailto:abashejaph@gmail.com">abashejaph@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/japheth-abashe-0a5b1b232" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/japheth-abashe-0a5b1b232</a></li>
-      <li>GitHub: <a href="https://github.com/abashe123 target="_blank" rel="noopener noreferrer">github.com/japheth</a></li>
-    </ul>
-  </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Japheth Abashe. All rights reserved.</p>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <button aria-label="Back to top" id="backToTop" title="Back to top" tabindex="0">&#8679;</button>
-
-  <script>
-    // Smooth scrolling for navigation
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-        });
-        // Close menu on link click (mobile)
-        document.getElementById("nav-list").classList.remove("show");
-      });
-    });
-
-    // Hamburger menu toggle
-    const menuToggle = document.getElementById("menu-toggle");
-    const navList = document.getElementById("nav-list");
-
-    menuToggle.addEventListener("click", () => {
-      navList.classList.toggle("show");
-    });
-
-    // Typewriter effect
-    const phrases = [
-      "I'm Japheth Abashe",
-      "Web Developer",
-      "Let's Build Together",
-    ];
-
-    const typewriter = document.getElementById("typewriter");
-    let phraseIndex = 0;
-    let letterIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
-    let deletingSpeed = 50;
-
-    function typeEffect() {
-      const currentPhrase = phrases[phraseIndex];
-
-      if (isDeleting) {
-        typewriter.textContent = currentPhrase.substring(0, letterIndex--);
-      } else {
-        typewriter.textContent = currentPhrase.substring(0, letterIndex++);
-      }
-
-      if (!isDeleting && letterIndex === currentPhrase.length) {
-        isDeleting = true;
-        setTimeout(typeEffect, 1500); // Pause before deleting
-      } else if (isDeleting && letterIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        setTimeout(typeEffect, 500);
-      } else {
-        setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
-      }
-    }
-
-    window.onload = typeEffect;
-
-    // Back to Top Button functionality
-    const backToTopButton = document.getElementById("backToTop");
-
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        backToTopButton.classList.add("show");
-      } else {
-        backToTopButton.classList.remove("show");
-      }
-    });
-
-    backToTopButton.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    });
-  </script>
-
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
+    // Initialize AOS
     AOS.init({
-      once: true, // animate only once when scrolled into view
-      duration: 1000, // animation duration in ms
-      easing: 'ease-in-out' // animation timing
+      once: true,
+      duration: 1000,
+      easing: 'ease-in-out'
+    });
+
+    // Navigation functionality
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Remove active class from all links
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        
+        // Close mobile menu
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Active section highlighting
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section');
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-section') === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Back to top button
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   </script>
-
 </body>
 </html>
