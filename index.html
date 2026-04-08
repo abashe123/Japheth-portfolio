@@ -63,6 +63,8 @@
         </div>
     </nav>
 
+  <main>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
@@ -234,7 +236,7 @@
                         <div class="work-stack">Laravel · MySQL · Tailwind CSS · JavaScript</div>
                     </div>
                 </div>
-                
+    
                 <div class="work-divider"></div>
                 
                 <div class="work-row" data-aos="fade-up" data-aos-delay="200">
@@ -285,7 +287,7 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>japheth@example.com</span>
+                            <span>japhethabashe@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
@@ -316,22 +318,19 @@
         </div>
     </section>
 
+  </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Japheth Abashe. Made with <span class="heart">?</span> and code.</p>
+            <p>&copy; 2025 Japheth Abashe. Made with <span class="heart">&hearts;</span> and code.</p>
         </div>
-          </a>
-        </div>
-      </div>
     </footer>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Back to top">
       <i class="fas fa-chevron-up"></i>
     </button>
-
-  </main>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -421,7 +420,7 @@
 
       navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('data-section') === current) {
+        if (link.getAttribute('href') === '#' + current) {
           link.classList.add('active');
         }
       });
