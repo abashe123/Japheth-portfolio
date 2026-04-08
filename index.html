@@ -19,35 +19,45 @@
 </head>
 <body>
     <!-- Creative Navbar -->
-    <nav class="navbar" data-aos="fade-down">
+    <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <span class="logo-text">JA</span>
                 <div class="logo-dot"></div>
             </div>
-            <div class="nav-menu">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <div class="menu-header">
+                    <span class="menu-title">Menu</span>
+                    <button class="close-btn" id="menu-close" aria-label="Close menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
                 <a href="#home" class="nav-link">
+                    <span class="nav-link-number">01</span>
                     <span class="nav-text">Home</span>
-                    <span class="nav-dot"></span>
                 </a>
                 <a href="#about" class="nav-link">
+                    <span class="nav-link-number">02</span>
                     <span class="nav-text">About</span>
-                    <span class="nav-dot"></span>
                 </a>
                 <a href="#experience" class="nav-link">
+                    <span class="nav-link-number">03</span>
                     <span class="nav-text">Experience</span>
-                    <span class="nav-dot"></span>
                 </a>
                 <a href="#work" class="nav-link">
+                    <span class="nav-link-number">04</span>
                     <span class="nav-text">Work</span>
-                    <span class="nav-dot"></span>
                 </a>
                 <a href="#contact" class="nav-link">
+                    <span class="nav-link-number">05</span>
                     <span class="nav-text">Contact</span>
-                    <span class="nav-dot"></span>
                 </a>
+                <a href="#contact" class="nav-btn mobile-btn">Let's Talk</a>
             </div>
-            <div class="nav-cta">
+            <div class="nav-cta desktop-only">
                 <a href="#contact" class="nav-btn">Let's Talk</a>
             </div>
         </div>
@@ -65,7 +75,7 @@
                 <div class="hero-left" data-aos="fade-right">
                     <h1 class="hero-title">
                         <span class="intro-text" style="display:block !important; font-size:1.2rem !important; font-weight:600 !important; color:#94a3b8 !important; opacity:1 !important; margin-bottom:0px !important; letter-spacing:2px !important; visibility:visible !important; line-height:0.5 !important; margin-top:-20px !important; position:relative !important; top:-15px !important; font-family:'American Typewriter', 'Courier Prime', 'Special Elite', cursive !important;">Hi, my name is</span>
-                        <span class="name-text" style="display:block !important; font-size:1.2em !important; font-weight:900 !important; background:var(--gradient) !important; -webkit-background-clip:text !important; -webkit-text-fill-color:transparent !important; background-clip:text !important; white-space:nowrap !important; margin-top:0px !important; line-height:1 !important;">Japheth Abashe.</span>
+                        <span class="name-text" style="display:block !important; font-size:1.2em !important; font-weight:900 !important; background:var(--gradient) !important; -webkit-background-clip:text !important; -webkit-text-fill-color:transparent !important; background-clip:text !important; white-space:nowrap !important; margin-top:0px !important; line-height:1.2 !important;">Japheth Abashe.</span>
                     </h1>
                     <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
                         I build things for the web.
@@ -129,10 +139,11 @@
                         Hello! My name is Japheth, and I enjoy building systems that solve real-world problems through technology. My journey into software development started with a strong curiosity for how systems work, which led me to pursue a degree in Computer Science. Along the way, I developed a passion for web and mobile application development, especially when I began building practical solutions like healthcare management systems and e-commerce platforms.
                     </p>
                     <p class="about-description">
-                        Fast-forward to today, I've worked on several real-world projects, including a medical test management system, an e-commerce web application, and an IoT-based road condition monitoring system. These experiences have strengthened my ability to design and develop scalable, user-focused applications. My current focus is on building efficient and user-friendly web applications using Angular and Laravel, while also expanding my expertise in mobile and embedded systems as part of my Master's studies.
+                        Fast-forward to today, I've worked on several real-world projects, including a medical test management system, an e-commerce web application, and an IoT-based road condition monitoring system. These experiences have strengthened my ability to design and develop scalable, user-focused applications. My current focus is on building efficient and user-friendly web applications using Laravel, while also expanding my expertise in mobile and embedded systems as part of my Master's studies.
                     </p>
                     <p class="about-description">
-                        I'm also passionate about sharing knowledge and have experience teaching and guiding students in technology-related subjects, helping them build confidence and practical skills. Here are a few technologies I've been working with recently: JavaScript (ES6+), Angular, PHP (Laravel), MySQL, REST APIs, Git & GitHub.
+                        I'm also passionate about sharing knowledge and have experience teaching and guiding students in technology-related subjects, helping them build confidence and practical skills. Here are a few technologies 
+                        I've been working with recently: 
                     </p>
                     
                     <div class="tech-list">
@@ -169,43 +180,35 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Experience</h2>
             
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Senior Web Developer</h3>
-                        <p class="timeline-company">Tech Company</p>
-                        <p class="timeline-date">2022 - Present</p>
-                        <p class="timeline-description">
-                            Lead development of scalable web applications using modern frameworks 
-                            and best practices. Mentored junior developers and improved team workflows.
-                        </p>
+            <div class="exp-list">
+                <div class="exp-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="exp-period">2023 - 2024</div>
+                    <div class="exp-content">
+                        <h3 class="exp-title">Full Stack Developer <span class="exp-at">@</span> Softmed Ltd</h3>
+                        <p class="exp-desc">Lead development of scalable healthcare web applications. Mentored junior developers and improved team workflows.</p>
+                        <div class="exp-tech">Laravel · Angular · MySQL · REST APIs</div>
                     </div>
                 </div>
                 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Full Stack Developer</h3>
-                        <p class="timeline-company">Digital Agency</p>
-                        <p class="timeline-date">2020 - 2022</p>
-                        <p class="timeline-description">
-                            Developed and maintained multiple client projects using React, Node.js, 
-                            and various database technologies. Focused on performance optimization.
-                        </p>
+                <div class="exp-divider"></div>
+                
+                <div class="exp-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="exp-period">2022 - 2026</div>
+                    <div class="exp-content">
+                        <h3 class="exp-title">Graphic Designer / Web Developer <span class="exp-at">@</span> Anada Recruitment Agency</h3>
+                        <p class="exp-desc">Designed and developed responsive websites, created brand identities. Delivered 20+ client projects.</p>
+                        <div class="exp-tech">Figma · JavaScript · WordPress · SEO</div>
                     </div>
                 </div>
                 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Junior Developer</h3>
-                        <p class="timeline-company">Startup Inc</p>
-                        <p class="timeline-date">2019 - 2020</p>
-                        <p class="timeline-description">
-                            Started my professional journey building responsive websites and learning 
-                            modern development practices. Contributed to various client projects.
-                        </p>
+                <div class="exp-divider"></div>
+                
+                <div class="exp-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="exp-period">2019 - 2020</div>
+                    <div class="exp-content">
+                        <h3 class="exp-title">Junior Web Developer <span class="exp-at">@</span> Tech Startup</h3>
+                        <p class="exp-desc">Built responsive websites and e-commerce platforms. Learned modern development practices.</p>
+                        <div class="exp-tech">HTML/CSS · JavaScript · PHP · Git</div>
                     </div>
                 </div>
             </div>
@@ -217,61 +220,50 @@
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Work</h2>
             
-            <div class="work-grid">
-                <div class="work-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
+            <div class="work-list">
+                <div class="work-row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="work-screenshot">
+                        <img src="assets/images/project1.png" alt="Medical Test Management System" class="work-img">
+                        <div class="work-img-overlay">
+                            <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
                         </div>
                     </div>
-                    <div class="work-content">
-                        <h3 class="work-title">Mobile App</h3>
-                        <p class="work-description">
-                            Revolutionary mobile application with modern UI/UX design and seamless user experience.
-                        </p>
-                        <div class="work-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                        <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <div class="work-info">
+                        <h3 class="work-name">Integrated Attendance & Membership System (IAMS)</h3>
+                        <p class="work-summary">Healthcare web application for managing medical tests, appointments, and patient records.</p>
+                        <div class="work-stack">Laravel · MySQL · Tailwind CSS · JavaScript</div>
                     </div>
                 </div>
                 
-                <div class="work-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-globe"></i>
+                <div class="work-divider"></div>
+                
+                <div class="work-row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-screenshot">
+                        <img src="assets/images/project3.png" alt="E-Commerce Platform" class="work-img">
+                        <div class="work-img-overlay">
+                            <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
                         </div>
                     </div>
-                    <div class="work-content">
-                        <h3 class="work-title">Web Platform</h3>
-                        <p class="work-description">
-                            Scalable web application with real-time features and modern architecture.
-                        </p>
-                        <div class="work-tech">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <div class="work-info">
+                        <h3 class="work-name">E-Commerce Platform</h3>
+                        <p class="work-summary">Full-featured online store with payment integration, inventory management, and admin dashboard.</p>
+                        <div class="work-stack">PHP · JavaScript · MySQL · Stripe API</div>
                     </div>
                 </div>
                 
-                <div class="work-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i class="fas fa-brain"></i>
+                <div class="work-divider"></div>
+                
+                <div class="work-row" data-aos="fade-up" data-aos-delay="300">
+                    <div class="work-screenshot">
+                        <img src="assets/images/project3.png" alt="IoT Road Monitoring System" class="work-img">
+                        <div class="work-img-overlay">
+                            <a href="#" class="work-view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
                         </div>
                     </div>
-                    <div class="work-content">
-                        <h3 class="work-title">AI Solution</h3>
-                        <p class="work-description">
-                            Machine learning powered application for intelligent data analysis and insights.
-                        </p>
-                        <div class="work-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                        </div>
-                        <a href="#" class="work-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <div class="work-info">
+                        <h3 class="work-name">IoT Road Monitoring System</h3>
+                        <p class="work-summary">Real-time road condition monitoring using sensors with data visualization dashboard.</p>
+                        <div class="work-stack">Angular · Node.js · MongoDB · IoT Sensors</div>
                     </div>
                 </div>
             </div>
@@ -353,12 +345,35 @@
 
     // Navigation functionality
     const navToggle = document.getElementById('nav-toggle');
+    const menuClose = document.getElementById('menu-close');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    navToggle.addEventListener('click', () => {
+    function toggleMenu() {
       navMenu.classList.toggle('active');
       navToggle.classList.toggle('active');
+      
+      // Toggle icon between bars and X with rotation
+      const icon = navToggle.querySelector('i');
+      if (navMenu.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
+    });
+
+    menuClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
 
     navLinks.forEach(link => {
@@ -376,9 +391,19 @@
         link.classList.add('active');
         
         // Close mobile menu
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
+        if (navMenu.classList.contains('active')) {
+          toggleMenu();
+        }
       });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('active') && 
+          !navMenu.contains(e.target) && 
+          !navToggle.contains(e.target)) {
+        toggleMenu();
+      }
     });
 
     // Active section highlighting
@@ -418,6 +443,34 @@
         top: 0,
         behavior: 'smooth'
       });
+    });
+
+    // Navbar hide on scroll - hide when leaving hero section
+    const navbar = document.querySelector('.navbar');
+    const heroSection = document.querySelector('#home');
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    function updateNavbar() {
+      const currentScrollY = window.scrollY;
+      const heroBottom = heroSection ? heroSection.offsetTop + heroSection.offsetHeight : 500;
+      
+      // Hide when scrolling down and past hero section, show when at top or scrolling up
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        navbar.classList.add('hidden');
+      } else if (currentScrollY < lastScrollY || currentScrollY < 50) {
+        navbar.classList.remove('hidden');
+      }
+      
+      lastScrollY = currentScrollY;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
+      }
     });
   </script>
 </body>
