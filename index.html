@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Japheth Abashe - Web Developer</title>
     
     <!-- Font Awesome -->
@@ -403,6 +403,78 @@
           !navToggle.contains(e.target)) {
         toggleMenu();
       }
+    });
+
+    // Swipe gesture support for mobile navigation
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const verticalThreshold = 100;
+      
+      // Only handle horizontal swipes
+      if (Math.abs(touchEndY - touchStartY) < verticalThreshold) {
+        if (touchEndX < touchStartX - swipeThreshold) {
+          // Swipe left - open menu
+          if (!navMenu.classList.contains('active')) {
+            toggleMenu();
+          }
+        }
+        if (touchEndX > touchStartX + swipeThreshold) {
+          // Swipe right - close menu
+          if (navMenu.classList.contains('active')) {
+            toggleMenu();
+          }
+        }
+      }
+    }
+
+    // Touch event listeners
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    document.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      handleSwipe();
+    }, { passive: true });
+
+    // Improved mobile performance - prevent scroll bounce
+    document.addEventListener('touchmove', (e) => {
+      if (navMenu.classList.contains('active')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    // Add ripple effect for buttons
+    function createRipple(event) {
+      const button = event.currentTarget;
+      const ripple = document.createElement('span');
+      const rect = button.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = event.clientX - rect.left - size / 2;
+      const y = event.clientY - rect.top - size / 2;
+      
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+      ripple.classList.add('ripple');
+      
+      button.appendChild(ripple);
+      
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    }
+
+    // Add ripple to all buttons
+    document.querySelectorAll('.btn, .nav-btn, .mobile-btn').forEach(button => {
+      button.addEventListener('click', createRipple);
     });
 
     // Active section highlighting
